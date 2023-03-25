@@ -1,6 +1,3 @@
-import os
-
-script_dir = os.path.dirname(os.path.realpath(__file__))
 
 file_path = os.path.join(script_dir, 'SampleQuestions.txt')
 
