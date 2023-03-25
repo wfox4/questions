@@ -25,7 +25,7 @@ concepts_science = {
     'Biology_Cells': ['prokaryotic', 'eukaryotic', 'plant''animal', 'bacterial', 'fungal', 'protist', 'ciliated', 'flagellated', 'neuron', 'muscle', 'gamete', 'stem', 'white blood', 'red blood', 'nerve', 'bone', 'liver', 'pancreas', 'kidney', 'thyroid', 'ovum', 'sperm'],
     'Space_Exploration': ['Mars Rover', 'SpaceX', 'James Webb Space Telescope', 'Voyager missions', 'Hubble Space Telescope', 'Curiosity Rover', 'New Horizons mission'],
     'Renewable_Energy': ['solar power', 'wind power', 'hydro power', 'geothermal power', 'tidal power', 'biomass energy'],
-    'Artificial_Intelligence': ['machine learning', 'deep learning', 'neural networks', 'natural language processing', 'computer vision', 'reinforcement learning', 'Generative Adversarial Networks (GANs)', '4-bit quantization inference.', '4-bit quantization fine-tuning.', '4-bit quantization tuning.', 'GPT Models.',],
+    'Artificial_Intelligence': ['machine learning', 'deep learning', 'neural networks', 'natural language processing', 'computer vision', 'reinforcement learning', 'Generative Adversarial Networks (GANs)', '4-bit quantization inference', '4-bit quantization fine-tuning', '4-bit quantization tuning', 'GPT Models',],
 }
 
 concepts_literature = {
@@ -145,7 +145,7 @@ problems.extend(generate_problems_for_concept('Compare', concept_dicts, 200000))
 
 random.shuffle(problems)
 
-output_file_path = r'C:\Users\XXXXXX\Documents\output.txt'
+output_file_path = r'C:\Users\XXXXXXXX\Documents\output.txt'
 
 with open(output_file_path, 'w', encoding='utf-8') as output_file:
     for i, problem in enumerate(problems):
