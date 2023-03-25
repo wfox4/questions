@@ -23,7 +23,9 @@ python removenumber.py
 
 python removedupes.py
 
-After completing these steps, you'll have a new file containing unique questions on each line.
+After completing these steps, you'll see the samplequestions.txt file will contain unique questions on each line.
+
+You have to move them or make a copy of the file before running the other generators. So do one at a time and make sure you run the remove numbers and dupes for each generator.
 
 Pre-generated Questions
 If you just want to use the included set of 67k unique questions, you can find them in the 67k_unique_questions.txt file.
