@@ -15,7 +15,8 @@ informationtoalter = {
 }
 
 def generate_prompt(task_key):
-    task = tasks[task_key][0]  # Get the primary task description
+    task_key = random.choice(list(tasks.keys()))  # Select a random task key
+    task = random.choice(tasks[task_key])  # Get a random task description from the selected list
 
     # Decide randomly if a modifier should be applied
     apply_modifier = random.choice([True, False])
@@ -35,7 +36,7 @@ def generate_prompt(task_key):
 
 # Call the function 100,000 times and save the results to a text file
 
-output_file_path = r'C:\Users\XXXXXXX\Documents\output.txt'
+output_file_path = r'C:\Users\thewh\Documents\output.txt'
 
 with open(output_file_path, 'w', encoding='utf-8') as output_file:
     for i in range(1000000):
