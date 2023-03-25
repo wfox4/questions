@@ -1,6 +1,6 @@
 # questions
 
-Update5PM3/25-Wasn't grabbing unique tasks for the rewrite gens. Now the base can generate somewhere between 100k questions maybe even more.
+Update5PM3/25-Wasn't grabbing unique tasks for the rewrite gens. Now the base can generate somewhere between 100k unique questions without adding anymore variables. Maybe even more than that, I haven't tested it much.
 
 Update use the 60k for correct formatting or make your own, I updated the scripts to fix formatting issues.
 
