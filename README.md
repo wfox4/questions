@@ -4,6 +4,8 @@ This repository contains four generator scripts that generate 1,000,000 question
 
 ## Usage
 
+You might need to create two text files one named output.txt and one named samplequestions.txt
+
 1. Run one of the generator scripts to generate 1,000,000 questions:
 
    ```sh
