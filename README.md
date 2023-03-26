@@ -34,6 +34,25 @@ After completing these steps, you'll see the samplequestions.txt file will conta
 
 You have to move them or make a copy of the file before running the other generators. So do one at a time and make sure you run the remove numbers and dupes for each generator.
 
+After generating the questions using the provided generator scripts, follow these steps to transform the JSON data using the FormatDatasetForFinetuning.py script:
+
+1. Create an input JSON file containing the generated questions. Name it responsesfromLLM.json or modify the input_file variable in the script to match your input file name.
+
+2, (Optional) Create an output JSON file named responsesTEST.json or modify the output_file variable in the script to specify a different output location.
+
+3. Run the FormatDatasetForFinetuning.py script:
+
+Copy code
+   
+   python FormatDatasetForFinetuning.py
+
+4. The script will prompt you to enter the delimiter for each item. Enter the desired delimiter to split the input text into instruction and input parts. If you don't want to split an item, press Enter without typing anything.
+
+5. The transformed JSON data will be saved to the output file after processing each item.
+
+After completing these steps, the output JSON file will contain the transformed data with separated instructions and inputs based on the provided delimiters.
+
+
 Pre-generated Questions
 If you just want to use the included set of 60k unique questions, you can find them in the 60k_unique_questions.txt file.
 If you're wondering what the point of this is. It's to create questions to ask larger LLM's to get your smaller one to perform much better.
