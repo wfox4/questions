@@ -24,8 +24,8 @@ for line in lines:
         new_line = line
     processed_lines.append(new_line)
 
-# Save the processed lines to the output file
-with open(output_file, 'w') as file:
-    file.writelines(processed_lines)
-
-print(f"Processed file saved as {output_file}.")
+with open(output_file_path, 'w', encoding='utf-8') as output_file:
+    for i, problem in enumerate(problems):
+        line = f"{i+1}. {problem}\n"
+        print(line.strip())  # Print the problems to the terminal without the newline character
+        output_file.write(line)
