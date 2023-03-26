@@ -34,7 +34,7 @@ After completing these steps, you'll see the samplequestions.txt file will conta
 
 You have to move them or make a copy of the file before running the other generators. So do one at a time and make sure you run the remove numbers and dupes for each generator.
 
-After generating the questions using the provided generator scripts, follow these steps to transform the JSON data using the FormatDatasetForFinetuning.py script:
+After generating the questions AND generating outputs from other sources, follow these steps to transform the JSON data using the FormatDatasetForFinetuning.py script:
 
 1. Create an input JSON file containing the generated questions. Name it responsesfromLLM.json or modify the input_file variable in the script to match your input file name.
 
