@@ -6,7 +6,7 @@ Update5PM3/25-Wasn't grabbing unique tasks for the rewrite gens. Now the base ca
 
 Update use the 60k for correct formatting or make your own, I updated the scripts to fix formatting issues.
 
-This repository contains four generator scripts that can generate 1,000,000 questions and save them to `output.txt`. You can then run the `removenumber` script and the `removedupes` script to obtain a new file with unique questions on each line. As a bonus, there's also a set of 60k unique questions included if you just want to use those.
+This repository contains four generator scripts (Each Script is based on different aspects and formatting) that can generate 1,000,000 questions and save them to `output.txt`. You can then run the `removenumber` script and the `removedupes` script to obtain a new file with unique questions on each line. As a bonus, there's also a set of 60k unique questions included if you just want to use those.
 
 ## Usage
 
