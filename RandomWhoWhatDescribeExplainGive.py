@@ -94,7 +94,7 @@ concept_dict = random.choice(concept_dicts)
 
 
 
-def generate_problem(concept_key, concept_dicts, leader_titles=None, major_war_modifiers=None):
+def generate_problem(concept_key, concept_dicts, phrases, leader_titles=None, major_war_modifiers=None):
     phrase = random.choice(phrases[concept_key])
 
     if concept_key == 'Compare':
@@ -118,10 +118,10 @@ def generate_problem(concept_key, concept_dicts, leader_titles=None, major_war_m
     return question
 
 
-def generate_problems_for_concept(concept_key, concept_dicts, n_problems, leader_titles=None, major_war_modifiers=None):
+def generate_problems_for_concept(concept_key, concept_dicts, phrases, n_problems, leader_titles=None, major_war_modifiers=None):
     problems = []
     for _ in range(n_problems):
-        problem = generate_problem(concept_key, concept_dicts, leader_titles, major_war_modifiers)
+        problem = generate_problem(concept_key, concept_dicts, phrases, leader_titles, major_war_modifiers)
         problems.append(problem)
     return problems
 
@@ -131,16 +131,17 @@ problems = []
 concept_dicts = [concepts_history, concepts_science, concepts_literature]
 
 # Generate problems for history concepts
-problems.extend(generate_problems_for_concept('Compare', concept_dicts, 200000))
-problems.extend(generate_problems_for_concept('Leaders', concept_dicts, 100000, leader_titles=leader_titles))
-problems.extend(generate_problems_for_concept('Major_Wars', concept_dicts, 100000, major_war_modifiers=major_war_modifiers))
+problems.extend(generate_problems_for_concept('Compare', concept_dicts, phrases, 200000))
+problems.extend(generate_problems_for_concept('Leaders', concept_dicts, phrases, 100000, leader_titles=leader_titles))
+
+problems.extend(generate_problems_for_concept('Major_Wars', concept_dicts, phrases, 100000, major_war_modifiers=major_war_modifiers))
 
 # Generate problems for science concepts
-problems.extend(generate_problems_for_concept('Compare', concept_dicts, 200000))
+problems.extend(generate_problems_for_concept('Compare', concept_dicts, phrases, 200000))
 # Add other science-related keys and their respective n_problems here, if any
 
 # Generate problems for literature concepts
-problems.extend(generate_problems_for_concept('Compare', concept_dicts, 200000))
+problems.extend(generate_problems_for_concept('Compare', concept_dicts, phrases, 200000))
 # Add other literature-related keys and their respective n_problems here, if any
 
 random.shuffle(problems)
