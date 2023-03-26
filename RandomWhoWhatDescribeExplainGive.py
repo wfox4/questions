@@ -41,7 +41,7 @@ concepts_literature = {
     
     'TV_Shows': ['Game of Thrones', 'Stranger Things', 'The Mandalorian','The Crown', "The Queen's Gambit", 'The Office', 'Breaking Bad', 'Friends', 'The Sopranos', 'House of Cards', "The Handmaid's Tale", 'Westworld', 'The Boys', 'Avengers: Endgame', 'Black Panther', 'Parasite'],
     
-    'Leaders': ['Who was the', 'Identify the', 'Name the', 'Explain the', 'Write a description of', 'Describe the impact of the', 'Design a article for the', 'Construct a timeline for the', 'Design logo for the', 'Generate a list of achievements about', 'Create a story using', 'Generate a rap song about', 'Generate a tweet about', 'Identify the subject for',],
+    
 }
 
 
