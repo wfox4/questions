@@ -1,12 +1,13 @@
 # Question Generator For Alpaca Like Models
 
+Update5AM-3-27:Restarted building the dataset due to improper system prompt creating useless answers. 10k Unformatted outputs so far. The train keeps rolling.
+
 Update5AM-3-26:Added what I have so far for outputs, I've stopped making them until the next time the API call loop breaks, take way I can take the new generations, remove any formatting mistakes then run my script for formatting them for LoRA. Added the script I'm using for seperating the inputs into instructions and inputs. responsesFinalForFinetuning.json shows the results of that.
 
 Update5PM3/25-Wasn't grabbing unique tasks for the rewrite gens. Now the base can generate somewhere between 100k unique questions without adding anymore variables. Maybe even more than that, I haven't tested it much.
 
-Update use the 60k for correct formatting or make your own, I updated the scripts to fix formatting issues.
 
-This repository contains four generator scripts (Each Script is based on different aspects and formatting) that can generate 1,000,000 questions and save them to `output.txt`. You can then run the `removenumber` script and the `removedupes` script to obtain a new file with unique questions on each line. As a bonus, there's also a set of 60k unique questions included if you just want to use those.
+This repository contains four generator scripts (Each Script is based on different aspects and formatting) that can generate questions and save them to `output.txt`. You can then run the `removenumber` script and the `removedupes` script to obtain a new file with unique questions on each line. As a bonus, there's also a set of 60k unique questions included if you just want to use those.
 
 ## Usage
 
