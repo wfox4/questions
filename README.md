@@ -1,5 +1,7 @@
 # Question Generator For Alpaca Like Models
 
+Update4PM-3-27:Added a script (FormatDatasetForFinetuningFinal.py) to convert the input/outputs to the correct format for finetuning. Note there are still issues with the dataset with misspelling and double words. the the & more more seem to be the only double words and .," will be in some of the instruction lines, I'll make a script to fix the issues once I'l done collecting replies. 
+
 Update5AM-3-27:Restarted building the dataset due to improper system prompt creating useless answers. 10k Unformatted outputs so far. The train keeps rolling. Added the uneditted outputs I have so far.
 
 Update5AM-3-26:Added what I have so far for outputs, I've stopped making them until the next time the API call loop breaks, take way I can take the new generations, remove any formatting mistakes then run my script for formatting them for LoRA. Added the script I'm using for seperating the inputs into instructions and inputs. responsesFinalForFinetuning.json shows the results of that.
