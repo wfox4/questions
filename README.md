@@ -1,12 +1,6 @@
 # Question Generator For Alpaca Like Models
 
-Update4PM-3-27:Added a script (FormatDatasetForFinetuningFinal.py) to convert the input/outputs to the correct format for finetuning. Note there are still issues with the dataset with misspelling and double words. the the & more more seem to be the only double words and .," will be in some of the instruction lines, I'll make a script to fix the issues once I'l done collecting replies. 
-
-Update5AM-3-27:Restarted building the dataset due to improper system prompt creating useless answers. 10k Unformatted outputs so far. The train keeps rolling. Added the uneditted outputs I have so far.
-
-Update5AM-3-26:Added what I have so far for outputs, I've stopped making them until the next time the API call loop breaks, take way I can take the new generations, remove any formatting mistakes then run my script for formatting them for LoRA. Added the script I'm using for seperating the inputs into instructions and inputs. responsesFinalForFinetuning.json shows the results of that.
-
-Update5PM3/25-Wasn't grabbing unique tasks for the rewrite gens. Now the base can generate somewhere between 100k unique questions without adding anymore variables. Maybe even more than that, I haven't tested it much.
+Final Update: The Questions I used for https://huggingface.co/datasets/whitefox44/AlpacaGPT3.5Customized are now inside the instruction list. Hopefully when GPT4 API comes out I can run them through that.
 
 
 This repository contains four generator scripts (Each Script is based on different aspects and formatting) that can generate questions and save them to `output.txt`. You can then run the `removenumber` script and the `removedupes` script to obtain a new file with unique questions on each line. As a bonus, there's also a set of 60k unique questions included if you just want to use those.
