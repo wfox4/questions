@@ -33,6 +33,9 @@ You have to move them or make a copy of the file before running the other genera
 
 After generating the questions AND generating outputs from other sources, follow these steps to transform the JSON data using the FormatDatasetForFinetuning.py script:
 
+Note FormatDatasetForFinetuningFinal.py is a script to seperate them automatically. If you add in new questions you'll have to edit it to add the instructions to the list.
+
+
 1. Create an input JSON file containing the generated questions. Name it responsesfromLLM.json or modify the input_file variable in the script to match your input file name.
 
 2, (Optional) Create an output JSON file named responsesTEST.json or modify the output_file variable in the script to specify a different output location.
